@@ -1,0 +1,72 @@
+Answers to the discussion part of week 6 weekend assessment
+
+Runtime:
+
+1. O(n)
+
+2. Fastest: O(1) 
+            O(log n)
+            O(n)
+            O(n log n)
+            O(n2)
+   Slowest: O(2n)
+
+----------------------
+
+Stacks & Queues:
+
+1. Stack
+2. Queue
+3. Stack
+
+Examples for Queues:
+1. Task Lists
+2. Coffee Orders in a coffee shop
+
+Examples for Stacks:
+1. CRTL-Z -> removing the most recent addition to a document
+2. packing and unpacking a moving box
+
+----------------------
+
+Linked Lists:
+
+1. We have an apple node, a berry node, and a cherry node. Nodes have a data and a next atrribute. Each node in this linked list has a string as it's data. The apple node's data is the string "Apple", the berry node's data is the string "Berry", the cherry node's data is the string "Cherry"
+
+The head of this linked list in the apple node. The head is always the first node in a linked list. The tail is the cherry node (even though it is not being tracked in this diagram). The tail is the last node in a linked list. 
+
+The arrows point to where the current node's next attribute is bound to.
+
+2. A singly linked list has only a data and a next attribute, it is only keeping track of the node that follows. A doubly linked list is also keeping track of the node that came before it.
+
+3. If we keep track of the tail of a linked list we can append to it in constant time (in O(1)), instead of having to travese over the entire list until we get to a next attribute that is pointing to 'None'.
+
+----------------------
+
+Trees:
+
+1. food -> italian -> indian -> mexican -> lasanga -> pizza -> tikka masala -> saag -> BURRITO
+
+
+2. The example in class traversed using a stack and added all children to its stack before starting checking the nodes, hence we started going deep into the nodes starting on the right end of the tree. Below is the example of the nodes being visited in order using the approach we discussed in class
+
+food -> mexican -> enchiladas -> tacos -> burrito -> indian -> saag -> tikka masala -> italian -> pizza -> sicilian -> new york style -> CHICAGO STYLE
+
+I looked up the depth first search to learn more about it and saw on wikipedia that the nodes were visited from the left side. Thinking maybe the that approach doesn't add the nodes to a stack but just checks each node and then it's children from the left side as it lands on the node? If using that approach, the order of nodes visited would be:
+
+food -> italian -> pizza -> thin crust -> CHICAGO STYLE
+
+3. A binary search tree can reference a maximum of two nodes, arranged is a way that is optimized for search, not for displaying heirarchy. The rule of arrangement is set by the programmer, but best practice is to have the node with the middle value be the root of the tree and the left child's value being smaller than the parent node's value and the right child's value being larger than the parent's node value. This structure remains intact throughout the entire tree, so the most left child is the smallest value in the tree and the most right child is the largest value in the tree.
+
+A binary search tree should be nicely balanced to work most effieciently. Due to the arrangement of data the runtime of finding a node in a binary search tree is more efficient (O(log n)). 
+
+
+
+
+
+
+
+
+
+
+
